@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+	<title>MS App Opener</title>
+	<script>
+		function handleSubmit(event) {
+			event.preventDefault(); // Prevent form submission
+			let selectedOption = document.querySelector('input[name="good-notgood"]:checked').value;
+			let youtubeUrl = '';
+
+			// Assign a YouTube link based on the selected option
+			if (selectedOption === 'good') {
+				youtubeUrl = 'https://www.youtube.com/watch?v=h2ahAEvnGmI'; // Replace with actual link
+			} else if (selectedOption === 'notgood') {
+				youtubeUrl = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // Replace with actual link
+			}
+
+			// Redirect to the selected YouTube link
+			window.location.href = youtubeUrl;
+		}
+
+		function playMusic() {
+			// Replace with the YouTube link or audio file URL for your music
+			let musicUrl = 'https://www.youtube.com/watch?v=GqYj_f9gVqM'; // Replace with actual music link
+			window.open(musicUrl, '_blank');
+		}
+	</script>
+</head>
+<body>
+    <div class = "opening">
+	<section class = "1A">
+		<h1>Open MS Apps</h1>
+		<fieldset>
+			<legend>This links will open some MS Apps just like double clicking on your desktop</legend>
+			<a href="ms-word:ofe|u|">Open MS Word</a><br>
+			<a href="ms-excel:ofe|u|">Open MS Excel</a><br>
+			<a href="ms-powerpoint:ofe|u|">Open MS PowerPoint</a><br>
+		</fieldset>
+	</section>
+	<section class = "2A">
+		<h2>Now a question for you good sir/maam</h2>
+		<form onsubmit="handleSubmit(event)">
+			<fieldset>
+				<legend>Are you good or not?</legend>
+				<label><input id="good" type="radio" name="good-notgood" value="good" checked>Good</label>
+				<label><input id="notgood" type="radio" name="good-notgood" value="notgood">Not Good</label>
+			</fieldset>
+			<fieldset>
+				<legend>Choose wisely and click the button to proceed</legend>
+				<button type="submit">OK</button>
+			</fieldset>
+            <fieldset>
+                <legend>Amazing</legend>
+                <label>Thank you very much for your time, now click the button</label>
+                <h1 class = "little-child">click the "play me" little child<h2>
+            </fieldset>
+			<!-- New Button to play music -->
+			<fieldset>
+				<legend>Play....</legend>
+				<button type="button" onclick="playMusic()">Play Me</button>
+			</fieldset>
+		</form>
+	</section>
+    </div>
+    <div class = "second-pane">
+        <section class = "3A">
+            <h1>Socials</h1>
+            <p>My Personal Domains thank you very much</p>
+          <img src="https://cdn-icons-png.flaticon.com/512/4187/4187236.png" alt="socials icon"/>
+          <article class="socials">
+            <p class="facebook"><a href="https://web.facebook.com/tehtohsakaa/" target="_blank"> Facebook</a></p>
+          </article>
+          <article class="socials">
+            <p class="instagram"><a href="https://www.instagram.com/tohbuu_suuu/" target="_blank"> Instagram</a></p>
+          </article>
+          <article class="socials">
+            <p class="twitter"><a href="https://x.com/CharlieeS8231" target="_blank"> Twitter</a></p>
+          </article>
+        </section>
+        </div>
+        <div class = "contents">
+            <section class = "1B">
+                <h1 class="test">Welcome to my Site</h1>
+                <p class="introductiontocontents"><a href="https://myanimelist.net/profile/Tohbuu">MyAnimeList Page</a></p>
+                <p class="hovertext1B"><a href="Test2.html">Go back to the Main page(Testing Phase)</a></p>
+                <p>All rights reserved to the owners of this page.</p>
+            </section>
+        </div>
+</body>
+    <body class="body2">
+        <div class ="rightUI">
+            <section class="rightpane">
+                <h1 class="testbody2">Input Data Hub(Experimental)</h1>
+            </section>
+            </div>
+    </body>
+</html>

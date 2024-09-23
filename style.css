@@ -1,0 +1,65 @@
+body {
+    background-image: url(https://images3.alphacoders.com/887/887758.png);
+    font-family:'Segoe UI', Tahoma, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Verdana, sans-serif;
+    background-size:100% 100%;
+    background-attachment:fixed;
+
+  }
+.opening {
+    text-align: center;
+    width: 80%;
+    background-color:rgba(255,255,255,0.5) ;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+  }
+
+.little-child{
+    color: #c21552;
+}
+
+.second-pane {
+    width: 80%;
+    background-color:rgba(255,255,255,0.5) ;
+    margin-left: auto;
+    padding: 20px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.socials{
+text-align: center;
+
+}
+
+
+.contents{
+    width: 50%;
+    background-color: rgba(255,255,255,0.5);
+    margin-inline: block;
+    padding: 20px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.test{
+    color: #c21552;
+}
+
+.hovertext1B:hover{
+    color:red;
+    text-decoration: underline;
+}
+
+.introductiontocontents:hover{
+    color:aquamarine;
+    text-decoration-color: deeppink;
+
+}
+
+.body2 {
+    text-align:center;
+}
+.testbody2{
+    color:plum;
+}
